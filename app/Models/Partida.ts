@@ -9,6 +9,18 @@ export default class Partida extends BaseModel {
   public nome: string
 
   @column()
+  public id_player1: number
+
+  @column()
+  public id_player2: number
+
+  @column()
+  public id_time1: number
+
+  @column()
+  public id_time2: number
+
+  @column()
   public estado: string
 
   @column.dateTime({ autoCreate: true })
